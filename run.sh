@@ -53,6 +53,6 @@ then
 fi
 
 # Tag your commit.
-git tag -a "$tagname" $WERCKER_GIT_COMMIT -m "Wercker deploy TAG:${TAG_ANNOTATION} by $WERCKER_STARTED_BY"
+git tag -a "$TAG_ANNOTATION" $WERCKER_GIT_COMMIT -m "Wercker deploy TAG:${TAG_ANNOTATION} by $WERCKER_STARTED_BY"
 git push origin --tags 
 	  
