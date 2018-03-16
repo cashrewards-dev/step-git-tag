@@ -2,11 +2,11 @@
 set +e
 set -o noglob
 
-#
-# Headers and Logging
-#
+echo "----------------------------------------"
+echo "$(head -n 2 $WERCKER_STEP_ROOT/wercker-step.yml)"
+echo "----------------------------------------"
 
-source ./src/helper.sh
+source $WERCKER_STEP_ROOT/src/helper.sh
 
 STEP_PREFIX="WERCKER_GIT_TAG"
 step_var() {
