@@ -1,11 +1,11 @@
 name: git-tag
-version: 0.0.2
-description: Commit a tag to given commit
-keywords:
+version: 0.1.0
+summary: Commit a tag to given commit
+tags:
   - git
   - tag
 properties:
-  tag:
+  - name: tag
     type: string
     required: true
 
